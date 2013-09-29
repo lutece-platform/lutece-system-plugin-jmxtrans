@@ -1,0 +1,43 @@
+{
+  "queries": [
+      {
+      "objectName": "Lutece:type=Portal",
+      "resultAlias": "Portal",
+      "attributes": [
+        {
+          "name": "PageCount",
+          "resultAlias": "portal.pageCount"
+        }
+       ]
+      },
+      {
+      "objectName": "Catalina:type=Server",
+      "resultAlias": "Tomcat",
+      "attributes": [
+        {
+          "name": "serverInfo",
+          "resultAlias": "tomcat.serverInfo"
+        }
+       ]
+      }
+
+  ],
+  "outputWriters": [
+    {
+      "@class": "org.jmxtrans.embedded.output.ConsoleWriter"
+    },
+    {
+      "@class": "org.jmxtrans.embedded.output.GraphiteWriter",
+      "settings": {
+        "host": "${graphite.host:localhost}",
+        "port": "${graphite.port:2003}"
+      }
+    }
+  ],
+    "queryIntervalInSeconds": "${jmxtrans.queryIntervalInSeconds:30}",
+    "numQueryThreads": "${jmxtrans.numQueryThreads:2}",
+    "numExportThreads": "${jmxtrans.numExportThreads:2}",
+    "exportIntervalInSeconds": "${jmxtrans.exportIntervalInSeconds:5}",
+    "exportBatchSize": "${jmxtrans.exportBatchSize:50}"
+
+}
