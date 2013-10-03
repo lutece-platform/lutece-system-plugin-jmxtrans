@@ -5,21 +5,45 @@
     </properties>
     <body>
         <section name="Plugin jmxtrans">
-            <!--
-            <p>
-                <img src="images/jmxtrans.png" />
-            </p>
-            -->
+            <img src="images/jmxtrans.png" />
             <subsection name="Introduction">
-                <p></p>
+                <p>
+                    Le plugin JMXTrans s'appuie sur le projet <a href="https://github.com/jmxtrans/embedded-jmxtrans" target="_blank">embedded-jmxtrans</a>
+                    dont l'objectif est de collecter des métriques JMX et de les exporter vers des systèmes de logs, de monitoring ou de représentation graphique tels
+                    que <a href="https://github.com/graphite-project" target="_blank">graphite</a>.
+                </p>
             </subsection>
             <subsection name="Configuration">
-                <p></p>
+                <p>
+                    Les métriques à exporter doivent déclarées dans le fichier jmxtrans.json situé à la racine du classpath. 
+                </p>
+                <p>
+                    Voici par exemple la déclaration de la métrique <b>lutece.cache.pageService.memorySize</b> fournissant 
+                    la taille du cache mémoire utilisé par le service de fourniture des pages de Lutece, basée l'attribut MemorySize 
+                    du MBean JMX ayant pour nom <b>"Lutece:type=Caches,name=Page Cache Service"</b>. 
+                </p>
+                <p>
+                    <pre>
+{
+  "queries": [
+      {
+      "objectName": "Lutece:type=Caches,name=Page Cache Service",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.pageService.memorySize"
+        }
+       ]
+      },
+      ...
+  ]
+}                  
+                    </pre>
+                    
+                </p>
             </subsection>
-            <subsection name="Usage">
-                <p></p>
-            </subsection>
-        </section>
+         </section>
     </body>
 </document>
 
