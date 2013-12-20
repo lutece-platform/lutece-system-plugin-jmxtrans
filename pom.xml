@@ -10,7 +10,7 @@
     <groupId>fr.paris.lutece.plugins</groupId>
     <artifactId>plugin-jmxtrans</artifactId>
     <packaging>lutece-plugin</packaging>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0</version>
     <name>Lutece jmxtrans plugin</name>
 
     <repositories>
@@ -44,13 +44,13 @@
     <properties>
         <componentName>jmxtrans</componentName>
         <jiraProjectName>JMXTRANS</jiraProjectName>
-        <jiraComponentId></jiraComponentId>
+        <jiraComponentId />
     </properties>
     
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/system/plugin-jmxtrans</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/system/plugin-jmxtrans</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/system/plugin-jmxtrans</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/tags/plugin-jmxtrans-0.9.0</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/tags/plugin-jmxtrans-0.9.0</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/tags/plugin-jmxtrans-0.9.0</url>
     </scm>
 
 
