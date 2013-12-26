@@ -17,6 +17,10 @@
         {
           "name": "MemorySize",
           "resultAlias": "lutece.cache.documentResourceServlet.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.documentResourceServlet.Size"
         }
        ]
       },
@@ -27,7 +31,12 @@
         {
           "name": "MemorySize",
           "resultAlias": "lutece.cache.pageService.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.pageService.Size"
         }
+
        ]
       },
       {
@@ -37,7 +46,12 @@
         {
           "name": "MemorySize",
           "resultAlias": "lutece.cache.portletService.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.portletService.Size"
         }
+
        ]
       },
       {
@@ -47,7 +61,76 @@
         {
           "name": "MemorySize",
           "resultAlias": "lutece.cache.baseUserPreferences.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.baseUserPreferences.Size"
         }
+
+       ]
+      }
+      ,
+      {
+      "objectName": "Lutece:type=Caches,name=Datastore Cache Service",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.datastore.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.datastore.Size"
+        }
+
+       ]
+      }
+      ,
+      {
+      "objectName": "Lutece:type=Caches,name=PageCachingFilter",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.pageCachingFilter.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.pageCachingFilter.Size"
+        }
+
+       ]
+      }
+      ,
+      {
+      "objectName": "Lutece:type=Caches,name=StaticFilesCachingFilter",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.staticFilesCachingFilter.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.staticFilesCachingFilter.Size"
+        }
+
+       ]
+      }
+      ,
+      {
+      "objectName": "Lutece:type=Caches,name=XML Transformer Cache Service (XSLT)",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.xmlTransformerService.memorySize"
+        },
+        {
+          "name": "Size",
+          "resultAlias": "lutece.cache.xmlTransformerService.Size"
+        }
+
        ]
       }
       ,
