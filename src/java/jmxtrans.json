@@ -134,17 +134,6 @@
        ]
       }
       ,
-     {
-      "objectName": "Lutece:type=ConnectedUsers",
-      "resultAlias": "",
-      "attributes": [
-        {
-          "name": "ConnectedUsersCount",
-          "resultAlias": "lutece.technical.nbConnectedUsers"
-        }
-        ]
-      }
-      ,
    
       {
       "objectName": "Catalina:type=Server",
