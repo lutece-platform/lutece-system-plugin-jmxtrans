@@ -44,13 +44,13 @@
     <properties>
         <componentName>jmxtrans</componentName>
         <jiraProjectName>JMXTRANS</jiraProjectName>
-        <jiraComponentId />
+        <jiraComponentId>12260</jiraComponentId>
     </properties>
     
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/system/plugin-jmxtrans</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/system/plugin-jmxtrans</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/system/plugin-jmxtrans</url>
+        <connection>scm:svn:https://github.com/lutece-platform/lutece-system-plugin-jmxtrans.git</connection>
+        <developerConnection>scm:svn:https://github.com/lutece-platform/lutece-system-plugin-jmxtrans.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-system-plugin-jmxtrans.git</url>
     </scm>
 
 
