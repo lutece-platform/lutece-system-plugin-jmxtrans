@@ -5,21 +5,45 @@
     </properties>
     <body>
         <section name="Plugin jmxtrans">
-            <!--
-            <p>
-                <img src="images/jmxtrans.png" />
-            </p>
-            -->
+            <img src="images/jmxtrans.png" />
             <subsection name="Introduction">
-                <p></p>
+                <p>
+                    The JMXTrans plugin is based on the project <a href="https://github.com/jmxtrans/embedded-jmxtrans" target="_blank">embedded-jmxtrans</a>
+                    which collect JMX metrics and send them to logging or graphical monitoring system such as 
+                    <a href="https://github.com/graphite-project" target="_blank">graphite</a>.
+                </p>
             </subsection>
             <subsection name="Configuration">
-                <p></p>
+                <p>
+                    Exported metrics are defined in the <code>jmxtrans.json</code> located in the classpath. 
+                </p>
+                <p>
+                    Here, for example, the declaration of the metric <code>lutece.cache.pageService.memorySize</code> providing
+                     the size of the cache used by the service that delivers Lutece pages and using the MemorySize attribute of the 
+                     JMX MBean named <code> "Lutece: type = Caches, Page Cache Service name =" </code>. 
+                </p>
+                <p>
+                    <pre>
+{
+  "queries": [
+      {
+      "objectName": "Lutece:type=Caches,name=Page Cache Service",
+      "resultAlias": "",
+      "attributes": [
+        {
+          "name": "MemorySize",
+          "resultAlias": "lutece.cache.pageService.memorySize"
+        }
+       ]
+      },
+      ...
+  ]
+}                  
+                    </pre>
+                    
+                </p>
             </subsection>
-            <subsection name="Usage">
-                <p></p>
-            </subsection>
-        </section>
+         </section>
     </body>
 </document>
 
